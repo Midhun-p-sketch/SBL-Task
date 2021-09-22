@@ -1,0 +1,80 @@
+tr.mat-header-row {
+    background-color: #3b7dd8;
+    color: ghostwhite;
+}
+table.mat-table {
+    width: 100%;
+}
+
+.content {
+    min-height: calc(100vh - 98px);
+    border-radius: 10px;
+    margin: 16px;
+    color: lightgray;
+    margin-left: 30px;
+}
+h3{
+    color: black;
+    font-weight: bold;
+}
+th{
+    letter-spacing: .5px;
+
+}
+th,td{
+    padding: .25rem !important;
+    font-weight: bold;
+}
+.btn-primary{
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.phoneNo{
+    width: 72px !important;
+}
+
+.image-icon{
+    cursor: pointer;
+}
+
+.image-icon:hover{
+    cursor: pointer;
+    color: rgb(23, 151, 23);
+    font-size: 35px;
+    animation: ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.active{
+    color: #32CD32;
+}
+.inactive{
+    color:#807a7a;
+}
+
+.matInput{
+    width: 400px !important;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    color: rgb(247, 4, 4);
+    padding: 1px 14px;
+    transform: translate(0%, -50%);
+    margin-right: -32px;
+    margin-top: -14px;
+  }
+  
+  .close:hover {background: rgb(255, 255, 255); color: red;}
+
+  ::ng-deep input {
+    background: white;
+    box-shadow: 1px 1px 4px #0d2e8cdb;
+    height: 2.5rem;
+    border-radius: 4px !important;
+    padding: .5em !important;
+  }

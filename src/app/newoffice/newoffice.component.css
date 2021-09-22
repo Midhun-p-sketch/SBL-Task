@@ -1,0 +1,27 @@
+.content {
+    height: calc(100vh - 98px);
+    border-radius: 10px;
+    margin: 16px;
+    color: lightgray;
+    margin-left: 30px;
+}
+
+::ng-deep input {
+    background: white;
+    box-shadow: 1px 1px 4px #0d2e8cdb;
+    height: 2.5rem;
+    border-radius: 4px !important;
+    padding: .5em !important;
+  }
+  h2{
+      color: black;
+  }
+
+  .form-group {
+    margin-bottom: 0rem !important;
+}
+
+.inactive{
+    color:#C0C0C0;
+    margin-bottom: 0 !important;
+  }

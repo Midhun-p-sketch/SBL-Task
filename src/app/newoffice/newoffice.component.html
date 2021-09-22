@@ -1,0 +1,179 @@
+<!-- <div class="content mat-elevation-z8">
+    <div class="row">
+        <div class="col-4">
+            <span>ABCD</span>
+        </div>
+        <div class="col-4">
+            ABCD
+        </div>
+        <div class="col-4">
+            ABCD
+        </div>
+
+    </div>
+
+
+</div> -->
+
+<div class="content mat-elevation-z8">
+
+    <div style="padding: 0px;">
+        <h2 class="d-flex justify-content-center">NEW OFFICE LIST DETAILS</h2>
+        <form [formGroup]="saveOfficeForm">
+            <div class="col-12 mt-1">
+                <div class="row">
+                    <div class="col-4 ">
+                        <label for="officeName" class="text-primary mt-3">OFFICE NAME:</label> &nbsp;&nbsp;
+                    </div>
+                    <div class="col-4 ">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="officeName" placeholder="Office name"
+                                formControlName="officeName" style="width: 400px;">
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 ">
+                        <label for="locallanguage" class="text-primary mt-3">OFFICE NAME IN LOCAL LANGUAGE:</label>
+                        &nbsp;&nbsp;
+                    </div>
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="locallanguage"
+                                placeholder="Office name in local language" formControlName="officeNameLocal"
+                                style="width: 400px;">
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 ">
+                        <label for="address" class="text-primary mt-3">ADDRESS:</label> &nbsp;&nbsp;
+                    </div>
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="address" placeholder="Address"
+                                formControlName="address" style="width: 400px;">
+                        </div>
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 ">
+                        <label for="addressInLocal" class="text-primary mt-3">ADDRESS IN LOCAL:</label> &nbsp;&nbsp;
+                    </div>
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="addressInLocal"
+                                placeholder="Address in local language" formControlName="addressInLocal"
+                                style="width: 400px;">
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 ">
+                        <label for="email" class="text-primary mt-3">EMAIL:</label> &nbsp;&nbsp;
+                    </div>
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" placeholder="Email address"
+                                formControlName="email" style="width: 400px;">
+                        </div>
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 ">
+                        <label for="phoneNo" class="text-primary mt-3">PHONE NO:</label> &nbsp;&nbsp;
+                    </div>
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="phoneNo" placeholder="Phone No"
+                                formControlName="phoneNo" style="width: 400px;">
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 ">
+                        <label for="mobileNo" class="text-primary mt-3">MOBILE NO:</label> &nbsp;&nbsp;
+                    </div>
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="mobileNo" placeholder="Mobile No"
+                                formControlName="mobileNo" style="width: 400px;">
+                        </div>
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 ">
+                        <label for="employeesTot" class="text-primary mt-3">TOTAL EMPLOYEES:</label> &nbsp;&nbsp;
+                    </div>
+
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="employeesTot" placeholder="Total Employees"
+                                formControlName="totalEmployees" style="width: 400px;">
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 ">
+                        <label for="status" class="text-primary mt-3">STATUS:</label> &nbsp;&nbsp;
+                    </div>
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="status" placeholder="Status"
+                                formControlName="Status" style="width: 400px;">
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+
+                    </div>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="d-flex justify-content-center mt-1">
+            <button mat-raised-button class="mat-btn-style-submit setStyle" [disabled]="!saveOfficeForm.valid"
+                (click)="showSnackbarDuration('Details saved successfully','Done')">SAVE</button>&nbsp;&nbsp;
+            <button mat-raised-button class=" mat-btn-style-cancel setStyle" (click)="resetForm()">RESET</button>
+        </div>
+    </div>
+
+
+
+</div>

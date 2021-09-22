@@ -1,0 +1,56 @@
+<mat-toolbar>
+    <span class="letter-first">D</span> EPARTMENT <span class="letter-first">D</span> IRECTORY
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav class="mat-elevation-z8" mode="side" opened>
+        <mat-nav-list>
+            <a mat-list-item (click)="toggleMenu()" class="menu-button">
+                <mat-icon mat-list-icon>business</mat-icon>OFFICES
+                <mat-icon *ngIf="!showMenu">chevron_right</mat-icon>
+                <mat-icon *ngIf="showMenu">expand_more</mat-icon>
+            </a>
+            <mat-nav-list class="sidenav-submenu dropdownmenu menu-button d-block" *ngIf="showMenu"
+                style="margin-top: -10px;" routerLinkActive="active">
+                <a mat-list-item routerLink="/officeList" routerLinkActive="active">
+                    <span class="material-icons"> maps_home_work </span> &nbsp; LIST OFFICES</a>
+                <a mat-list-item routerLink="/newoffice" routerLinkActive="active"> <span class="material-icons">
+                        keyboard_alt </span> &nbsp; NEW
+                    OFFICE</a>
+            </mat-nav-list>
+
+            <a mat-list-item routerLink="/help" routerLinkActive="active">
+                <span class="material-icons"> info </span>&nbsp; HELP
+            </a>
+
+            <a mat-list-item (click)="logout()" routerLinkActive="active">
+                <span class="material-icons"> power_settings_new </span> &nbsp;LOGOUT
+            </a>
+
+        </mat-nav-list>
+
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+        <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<!-- Dialog Popup -->
+<ng-template #removePopup>
+
+    <h2 matDialogTitle>Log Out?</h2>
+    <mat-dialog-content>
+        <p>Do you want to log out?</p>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button mat-button matDialogClose="cancel" color="primary">Cancel</button>
+        <button mat-button matDialogClose="confirm" color="warn"
+            (click)="showSnackbarDuration('You are logged out','Done','1000')">Yes</button>
+    </mat-dialog-actions>
+
+</ng-template>

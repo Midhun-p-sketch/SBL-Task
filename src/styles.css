@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+th{
+    font-size: 11px !important;
+  }
+  .thead-color {
+      background-color: #3b7dd8;
+      color: #FFFFFF;
+    }
+    .row-head {
+      border: 1px solid #A1DCF2 !important;
+      font-size: 9px;
+      font-size: bold;
+    }
+
+    .mat-btn-style-submit{
+      line-height: 20px !important;
+      height: 30px;
+      margin-right: 5px;
+      color: #fff;
+      font-size: 11px;
+      background-color: #28a745;
+    }
+
+    .mat-btn-style-cancel{
+      line-height: 20px !important;
+      height: 30px;
+      margin-right: 5px;
+      color: #fff;
+      font-size: 11px;
+      background-color: rgb(218, 42, 42) !important;
+    }
+
+    .mat-dialog-container{
+      overflow: hidden !important;
+    }
+
+    
